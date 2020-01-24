@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: #3f9ae5;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.charts-container-big {
+  width: 90%;
+  margin-left: 5%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.charts-container {
+
+  width: 45%;
+  margin: 0 2.5% 0 2.5%;
+  float: left;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.chart-card {
+  width: 100%;
+  background-color: white;
+  margin: 2% 0 2% 0;
+  border-radius: 5px;
+
+  canvas {
+    min-height: 25vh;
+    max-height: 50vh;
+    width: 100%;
+  }
+}
+.settings-main-container{
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.form-container {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.form-control{
+ // margin-left: 25%;
+  text-align: center;
+}
+.form-input{
+//  width: 50%;
+  background-color: #addae5;
+  color: black;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid black !important;
+}
+
+.form-label{
+  font-weight: bolder;
+  width: 50%;
+  text-align: center;
+}
+.back-arrow{
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  transform: translate( -50%, 50% );
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  &:hover{
+    color: white;
+  }
+}
